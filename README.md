@@ -127,6 +127,9 @@ sudo bash chromeos-install.sh -src < path to the ChromeOS recovery image > -dst 
 ```
 8. Create a GRUB configuration file for brunch in your linux install:
 - Copy the grub config which appeared in the terminal at the end of the process (the text between lines with stars)
+*************************************************************************************************************************************************************
+echo -e '#!/bin/sh\nexec tail -n +3 $0\n\n\n\n'"$(sed '1,4d;$d' $(realpath "/home/ubuntu/tmpmount/chromeos.img").grub.txt)" | sudo tee /etc/grub.d/99_brunch && sudo chmod 0755 /etc/grub.d/99_brunch && sudo update-grub
+*************************************************************************************************************************************************************
 - Run `sudo cp /etc/grub.d/40_custom /etc/grub.d/99_brunch`
 - Then run `sudo nano /etc/grub.d/99_brunch`, paste the grub config at the end of the file. Save the changes and exit nano (CTRL-X).
 - Lastly, run `sudo update-grub`.
