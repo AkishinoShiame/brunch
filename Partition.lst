@@ -1,0 +1,76 @@
+# Tried on mac air
+# rummus.bin
+# 2012 11"
+
+8FE43316-246E-C64B-A11A-C363CD69497E
+       start        size    part  contents
+           0           1          PMBR (Boot GUID: 8FE43316-246E-C64B-A11A-C363CD69497E)
+           1           1          Pri GPT header
+           2          32          Pri GPT table
+    19255304    11065288       1  Label: "STATE"
+                                  Type: Linux data
+                                  UUID: 58AC54CF-0D36-AE48-97C1-D5F32CB5D3EC
+     2117638       65536       2  Label: "KERN-A"
+                                  Type: ChromeOS kernel
+                                  UUID: 6D60A772-11B5-FA4A-8467-35E699353F1C
+                                  Attr: priority=15 tries=15 successful=0 
+    10866696     8388608       3  Label: "ROOT-A"
+                                  Type: ChromeOS rootfs
+                                  UUID: FF11A0A7-4ECF-CC45-8775-67461A6D51E9
+     2183174       65536       4  Label: "KERN-B"
+                                  Type: ChromeOS kernel
+                                  UUID: 1962D938-6F9C-EE4A-AE4C-84099C59E436
+                                  Attr: priority=0 tries=15 successful=0 
+     2478088     8388608       5  Label: "ROOT-B"
+                                  Type: ChromeOS rootfs
+                                  UUID: F69C24C0-77A7-3544-95C2-DA24F240CEBA
+       16448           1       6  Label: "KERN-C"
+                                  Type: ChromeOS kernel
+                                  UUID: D532120E-22B5-D240-841F-99EE6128A1F3
+                                  Attr: priority=0 tries=15 successful=0 
+       16456     2097152       7  Label: "ROOT-C"
+                                  Type: ChromeOS rootfs
+                                  UUID: C91239F8-199C-A34F-AA9F-8A89E3439417
+     2248712       32768       8  Label: "OEM"
+                                  Type: Linux data
+                                  UUID: 2A4E5ED0-5EA8-EF47-965A-84CE96CC4583
+     2113608           1       9  Label: "reserved"
+                                  Type: ChromeOS reserved
+                                  UUID: 6CEE919A-E4AF-294A-87B9-FEC7A6FEBE92
+     2113609           1      10  Label: "reserved"
+                                  Type: ChromeOS reserved
+                                  UUID: 561D6AB7-99FF-904D-AF34-454F4129A9D6
+          64       16384      11  Label: "RWFW"
+                                  Type: ChromeOS firmware
+                                  UUID: 71B0FE19-17C9-BD45-8373-53429F76B5EA
+     2412552       65536      12  Label: "EFI-SYSTEM"
+                                  Type: EFI System Partition
+                                  UUID: 8FE43316-246E-C64B-A11A-C363CD69497E
+    30320607          32          Sec GPT table
+    30320639           1          Sec GPT header
+
+Writing partition 1
+8.17MiB 0:00:04 [1.75MiB/s] [==============================================================================================>] 100%            
+Writing partition 2
+32.0MiB 0:00:00 [ 107MiB/s] [==============================================================================================>] 100%            
+Writing partition 3
+2.34GiB 0:10:28 [3.82MiB/s] [==============================================================================================>] 100%            
+Writing partition 4
+32.0MiB 0:01:07 [ 483KiB/s] [==============================================================================================>] 100%            
+Writing partition 5
+2.34GiB 0:16:39 [2.40MiB/s] [==============================================================================================>] 100%            
+Writing partition 6
+ 512 B 0:00:00 [1.58MiB/s] [===============================================================================================>] 100%            
+Writing partition 7
+1.00GiB 0:06:54 [2.47MiB/s] [==============================================================================================>] 100%            
+Writing partition 8
+16.0MiB 0:00:06 [2.56MiB/s] [==============================================================================================>] 100%            
+Writing partition 9
+ 512 B 0:00:00 [1.58MiB/s] [===============================================================================================>] 100%            
+Writing partition 10
+ 512 B 0:00:00 [1.63MiB/s] [===============================================================================================>] 100%            
+Writing partition 11
+8.00MiB 0:00:00 [9.13MiB/s] [==============================================================================================>] 100%            
+Writing partition 12
+32.0MiB 0:00:03 [8.65MiB/s] [==============================================================================================>] 100%            
+ChromeOS installed.
